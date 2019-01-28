@@ -1,11 +1,7 @@
 import React from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 const portfolioItems = [
-  {
-    imgSrc: "./img/portfolio-1.jpg",
-    heading: "Stationary",
-    description: "A yellow pencil with envelopes on a clean, blue backdrop!"
-  },
+
   {
     imgSrc: "./img/portfolio-2.jpg",
     heading: "Ice Cream",
@@ -18,12 +14,7 @@ const portfolioItems = [
     description:
       "Strawberries are such a tasty snack, especially with a little sugar on top!"
   },
-  {
-    imgSrc: "./img/portfolio-4.jpg",
-    heading: "Workspace",
-    description:
-      "A yellow workspace with some scissors, pencils, and other objects."
-  }
+
 ];
 const PortfolioSection = () => (
   <ScrollableAnchor id="portfolio">

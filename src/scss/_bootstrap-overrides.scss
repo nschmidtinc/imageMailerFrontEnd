@@ -1,5 +1,5 @@
 a {
-  color: $primary;
+  color: #4b286d !important;
   &:hover,
   &:focus,
   &:active {
@@ -8,21 +8,22 @@ a {
 }
 
 .btn-primary {
-  background-color: $primary !important;
-  border-color: $primary !important;
-  color: $white !important;
+  background-color: #66cc00 !important;
+  border-color: #66cc00  !important;
+  color: $white !important; 
   &:hover,
   &:focus,
   &:active {
-    background-color: darken($primary, 10%) !important;
-    border-color: darken($primary, 10%) !important;
+    background-color: #ffff !important;
+    border-color: #66cc00 !important;
+    color: #66cc00 !important;
   }
 }
 
 .btn-secondary {
   background-color: $secondary !important;
   border-color: $secondary !important;
-  color: $white !important;
+  
   &:hover,
   &:focus,
   &:active {
@@ -45,9 +46,9 @@ a {
 }
 
 .text-primary {
-  color: $primary !important;
+  color: #4b286d !important;
 }
 
 .text-secondary {
-  color: $secondary !important;
+  color: #4b286d !important;
 }

@@ -9,5 +9,7 @@
 
 // Font Mixins
 @mixin body-font {
-  font-family: "Source Sans Pro";
+  font-weight: lighter !important;
+    letter-spacing: 2px;
+  font-family: "Quicksand";
 }
