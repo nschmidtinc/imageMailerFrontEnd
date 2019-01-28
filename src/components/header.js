@@ -15,7 +15,7 @@ class Header extends React.Component {
   componentWillMount() {
 
     console.log('mounted!!!')
-    fetch('http://localhost:5000/', {
+    fetch('http://localhost:4500/', {
         method: 'GET',
         mode: 'cors',
         headers: {
@@ -44,7 +44,7 @@ class Header extends React.Component {
   const data = {
     "email": email1 
   }
-      fetch('http://localhost:5000/sendmypicture/', {
+      fetch('http://localhost:4500/sendmypicture/', {
         method: 'POST',
         mode: 'cors',
         body: JSON.stringify(data),
