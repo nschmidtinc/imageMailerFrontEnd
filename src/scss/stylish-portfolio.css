@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 100 !important; }
+  font-weight: 700; }
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
@@ -97,10 +97,7 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: #ffff;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background: #ffff; }
   .masthead h1 {
     font-size: 4rem;
     margin: 0;
@@ -144,7 +141,7 @@ h6 {
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
-  background: rgba(255, 255, 255, 0.2); }
+  background: #ffff; }
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
@@ -293,8 +290,6 @@ footer.footer {
 
 a {
   color: #4b286d !important; }
-  a:hover, a:focus, a:active {
-    color: #155d74; }
 
 .btn-primary {
   background-color: #66cc00 !important;
@@ -323,7 +318,9 @@ a {
   background-color: #1d809f !important; }
 
 .text-primary {
-  color: #4b286d !important; }
+  color: #6a2fa2 !important;
+  letter-spacing: 2px !important; }
 
 .text-secondary {
-  color: #4b286d !important; }
+  color: #6a2fa2 !important;
+  letter-spacing: 2px !important; }

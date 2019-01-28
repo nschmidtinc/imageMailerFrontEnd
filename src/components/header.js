@@ -1,5 +1,6 @@
 import React from "react";
 import image from './VirtualMirror00007.png'
+import { Checkbox } from 'semantic-ui-react'
 let base64Icon = 'hello'
 let imageS = ''
 class Header extends React.Component {
@@ -72,9 +73,25 @@ Looks great!</h1>
       <a className="btn btn-primary btn-xl js-scroll-trigger" onClick={this.handleEmail} href="#about">
         Send Me My Picture!
       </a>
+      <div className="overlay" />
+
+    <div style={{textAlign: 'left'}}>
+        
+    <div style={{fontSize: '12px'}}><input type="checkbox" style={{ backgroundColor: 'initial',
+    cursor: 'default',
+    color: '#6a2fa2',
+    margin: '3px 0.5ex',
+    marginTop: '23px',
+    padding: 'initial',
+    border: 'initial'}}></input>En cliquant sur envoyer, je conscent à recevoir des courriels de la part de Telus. 
+   </div>
+   <div style={{fontSize: '12px', marginLeft: '18px'}}> By clicking on send, I agree to receive email from Telus.</div>
+    </div>
       </div>
     </div>
-    <div className="overlay" />
+    <div>
+    
+    </div>
   </header>
 )
 }
