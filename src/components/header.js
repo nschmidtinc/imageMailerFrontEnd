@@ -1,12 +1,15 @@
 import React from "react";
-import image from './VirtualMirror00007.png'
+import currentFile from '../../public/currentFile.png'
+//import image from './VirtualMirror00007.png'
 import { Checkbox } from 'semantic-ui-react'
+let directory = "../../../admin/AppData/local/stAnne/Saved/Screenshots/WindowsNoEditor/VirtualMirror00004.png"
 let base64Icon = 'hello'
 let imageS = ''
 class Header extends React.Component {
   state = {
     input: 'enter your email here',
-    yourImage: './VirtualMirror00007.png'
+
+    yourImage: '../../../admin/AppData/local/stAnne/Saved/Screenshots/WindowsNoEditor/VirtualMirror00004.png'
   };
   
   handleNameChange = (event) => {
@@ -15,24 +18,29 @@ class Header extends React.Component {
   componentWillMount() {
 
     console.log('mounted!!!')
-    fetch('http://localhost:4500/', {
-        method: 'GET',
+    
+
+    fetch('http://localhost:4500/sendMyPicture', {
+        method: 'POST',
         mode: 'cors',
         headers: {
           'Content-Type': 'application/json',
         },
       }).then( async response => {
        // const bing = JSON.parse(response)
-        this.setState({yourImage: response.body})
+
+        console.log(response)
+       // this.setState({yourImage: response.body})
        
         })
-    
+   
   }
+  
 
   componentDidUpdate() {
   console.log(this.state, 'this is the state!')
   base64Icon = this.state.yourImage
-  console.log(base64Icon)
+  console.log(this.state.yourImage)
   }
   handleEmail = () => {
 
@@ -44,6 +52,7 @@ class Header extends React.Component {
   const data = {
     "email": email1 
   }
+  /*
       fetch('http://localhost:4500/sendmypicture/', {
         method: 'POST',
         mode: 'cors',
@@ -52,6 +61,7 @@ class Header extends React.Component {
           'Content-Type': 'application/json',
         },
       })
+  */
   }
   render(){
   return(
@@ -62,7 +72,7 @@ Vous êtes superbe!</h1>
 <h1 style={{fontWeight: 50, fontSize: 25, color:'#49166d', textAlign: 'left'}}>
 Looks great!</h1>
 <div height="20" style={{borderTop: '3px solid #66cc00', fontSize: '20px', lineHeight: '20px', marginTop: '1rem', marginBottom: '1rem'}}></div>
-    <img style={{width:'100%', height:'60%'}} src={require('./VirtualMirror00007.png')} />
+    <img style={{width:'100%', height:'60%'}} src={currentFile} />
       
       <h3 style={{ fontWeight: 50, fontSize: 25, color:'#49166d',textAlign: 'left'}}>
 

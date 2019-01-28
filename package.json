@@ -24,6 +24,5 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "proxy": "http://172.18.60.95:5000"
+  }
 }
