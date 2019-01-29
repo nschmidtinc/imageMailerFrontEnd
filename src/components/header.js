@@ -52,7 +52,7 @@ class Header extends React.Component {
   const data = {
     "email": email1 
   }
-  /*
+  
       fetch('http://localhost:4500/sendmypicture/', {
         method: 'POST',
         mode: 'cors',
@@ -61,7 +61,7 @@ class Header extends React.Component {
           'Content-Type': 'application/json',
         },
       })
-  */
+  
   }
   render(){
   return(
@@ -72,7 +72,7 @@ Vous êtes superbe!</h1>
 <h1 style={{fontWeight: 50, fontSize: 25, color:'#49166d', textAlign: 'left'}}>
 Looks great!</h1>
 <div height="20" style={{borderTop: '3px solid #66cc00', fontSize: '20px', lineHeight: '20px', marginTop: '1rem', marginBottom: '1rem'}}></div>
-    <img style={{width:'100%', height:'60%'}} src={currentFile} />
+    { /*<img style={{width:'75%%', height:'60%', maxHeight: '500px'}} src={currentFile} /> */}
       
       <h3 style={{ fontWeight: 50, fontSize: 25, color:'#49166d',textAlign: 'left'}}>
 
